@@ -1,0 +1,980 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+a,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================= common css end ================================ */
+
+/* ============================= menu part start ================================ */
+.main_menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.main_menu img {
+    height: 60px;
+}
+
+.main_menu {
+    height: 80px;
+    background: #f1f1f1;
+    z-index: 99;
+}
+
+.main_menu ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #24252a;
+    padding: 0 10px !important;
+    font-family: 'Oswald', sans-serif;
+    line-height: 80px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    position: relative;
+}
+
+.main_menu ul li a:hover {
+    color: #777;
+}
+
+/* ============================= menu part end ================================ */
+
+/* ============================= banner part start ================================ */
+#banner_part {
+    margin-top: 80px;
+}
+
+.banner_item {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    padding: 40px 0 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_item::after {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner_text img {
+    height: 100px;
+    display: inline-block !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.banner_text h1 {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 45px;
+}
+
+.banner_text h2 {
+    color: #8fb3ee;
+    font-family: 'Dosis', sans-serif;
+    font-size: 33px;
+    padding-bottom: 15px;
+}
+
+.banner_text p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.banner_text a {
+    border: 1px solid #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    font-weight: 600;
+}
+
+.banner_text a::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    z-index: -1;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.banner_text a:hover::after {
+    width: 100%;
+}
+
+.banner_text a:hover {
+    color: #24252a;
+}
+
+.banner_text .lrn_btn {
+    margin-left: 15px;
+}
+
+.store_div {
+    display: flex;
+    margin-top: 25px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    justify-content: center;
+}
+
+.store_div i {
+    color: #e23e38;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 25px;
+    margin-left: 15px;
+    background: #fff;
+}
+
+.store_div p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.prv_arrr {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 99;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    font-size: 25px;
+}
+
+.nxt_arrr {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 99;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    font-size: 25px;
+}
+
+#banner_part .slick-dots li button {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    background: none;
+    margin: 0 10px;
+    transition: all linear 0.2s;
+}
+
+#banner_part .slick-dots {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#banner_part .slick-dots li.slick-active button {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================= banner part end ================================ */
+
+/* ============================= apps part start ================================ */
+#apps_part {
+    padding: 40px 0;
+    background: #f1f1f1;
+}
+
+.apps_frame {
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px 0px #979090;
+    box-shadow: 0px 0px 5px 0px #979090;
+    margin-top: 20px;
+}
+
+.apps_img_div {
+    height: 170px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.apps_img_div img {
+    height: 150px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.apps_text_div {
+    padding: 10px;
+}
+
+.apps_text_div h1 {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.apps_text_div h2 {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 0;
+}
+
+.apps_text_div a i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 5px;
+    background: transparent;
+    border: 1px solid #24252a;
+    color: #24252a;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.apps_text_div a i:hover {
+    background: #24252a;
+    color: #fff;
+}
+
+.padd_apps {
+    padding: 0 15px;
+}
+
+.apps_img_div::after {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.50);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+}
+
+.apps_frame:hover .apps_img_div::after {
+    opacity: 1;
+}
+
+.apps_more a {
+    padding: 4px 8px;
+    background: #689f38;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.apps_popu h5 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.apps_col {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ============================= apps part end ================================ */
+
+/* ============================= gallery part start ================================ */
+#gallery_part {
+    padding: 30px 0;
+    background: #f1f1f1;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.galley_div {
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px solid #36373b;
+}
+
+.gal_img img {
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+}
+
+.gal_text p {
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+.gal_img {
+    position: relative;
+}
+
+.overlyGal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.overlyGal a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+    padding: 80px;
+}
+
+.galley_div:hover .overlyGal {
+    opacity: 1;
+}
+
+/* ============================= gallery part end ================================ */
+
+/* ============================= service part start ================================ */
+#service_part {
+    padding: 30px 0;
+}
+
+.col_ser_com h5 {
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    border-bottom: 2px dashed #e23e38;
+    display: inline-block;
+}
+
+.ser_div {
+    margin-top: 70px;
+    padding: 60px 20px 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.overlySer {
+    position: absolute;
+    height: 95px;
+    width: 95px;
+    border: 3px solid #fff;
+    background: #dadada;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.ser_div h2 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.ser_div p {
+    font-size: 15px;
+    height: 120px;
+}
+
+.overlySer i {
+    color: #24252a;
+    line-height: 90px;
+    font-size: 50px;
+}
+
+.ser_div:hover {
+    -webkit-box-shadow: 0px 0px 5px 1px #353535;
+    box-shadow: 0px 0px 3px 0px #353535;
+}
+
+.ser_div:hover .overlySer {
+    background: #5bc5f4;
+}
+
+/* ============================= service part end ================================ */
+
+/* ============================= team part start ================================ */
+#team_part {
+    padding: 30px 0;
+}
+
+.team_row {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1.5px solid rgba(0, 0, 0, 0.3);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.team_img img {
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+}
+
+.team_text {
+    padding: 10px 0;
+}
+
+.team_text h1 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    text-transform: uppercase;
+}
+
+.team_text h5 {
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.team_img {
+    position: relative;
+}
+
+.overlyTeam {
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    right: 0;
+    border-radius: 0 3px 0 0;
+    -webkit-border-radius: 0 3px 0 0;
+    -moz-border-radius: 0 3px 0 0;
+    -ms-border-radius: 0 3px 0 0;
+    -o-border-radius: 0 3px 0 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transform: translateX(80px);
+    -webkit-transform: translateX(80px);
+    -moz-transform: translateX(80px);
+    -ms-transform: translateX(80px);
+    -o-transform: translateX(80px);
+}
+
+.overlyTeam ul {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.overlyTeam ul li a {
+    margin: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.team_row:hover {
+    -webkit-box-shadow: 0px 0px 5px 0px #000000;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.team_row:hover .overlyTeam {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.team_row:hover .team_text h1 {
+    color: #e23e38;
+}
+
+.team_row:hover .team_text h5 {
+    color: #353535;
+}
+
+.overlyTeam ul li a:hover {
+    background: #e23e38;
+    border-color: #e23e38;
+}
+
+/* ============================= team part end ================================ */
+
+/* ============================= testimonial part start ================================ */
+#testimonial_part {
+    padding: 30px 0;
+}
+
+.test_icon_div {
+    margin-top: 20px;
+}
+
+.test_text_div {
+    margin-top: 50px;
+    padding: 10px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: relative;
+}
+
+.test_icon_div img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.test_text_div::after {
+    position: absolute;
+    content: "";
+    height: 70px;
+    width: 70px;
+    background: #e7e7e7;
+    left: 50%;
+    top: -25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+
+.test_text_div h1 {
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    text-transform: uppercase;
+    color: purple;
+}
+
+.test_text_div h5 {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    padding: 5px 0;
+    color: #353535;
+}
+
+.test_text_div i {
+    color: #e23e38;
+}
+
+/* ============================= testimonial part end ================================ */
+
+/* ============================= footer part start ================================ */
+#footer_part {
+    padding: 30px 0;
+    background: rgba(51, 62, 79);
+    color: rgba(156, 169, 190);
+}
+
+.foot_our_web p {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 5px;
+}
+
+.foot_our_web a {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 3px;
+    font-family: 'Dosis', sans-serif;
+    color: rgba(156, 169, 190);
+}
+
+.foot_our_web h6 {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 3px;
+    font-family: 'Dosis', sans-serif;
+    color: rgba(156, 169, 190);
+}
+
+.foot_social {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 5px;
+    margin-left: 45px;
+}
+
+.foot_social a i {
+    background: rgba(29, 37, 49);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 8px;
+    margin-top: 13px;
+    color: #fff;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.foot_social a:hover i {
+    background: #468af9;
+}
+
+.foot_copy p {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 5px;
+}
+
+/* ============================= footer part end ================================ */
+
+/* ============================= privacy and terms html start ================================ */
+.writing_text {
+    margin: 90px 5px 25px;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.writing_text h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 25px;
+}
+
+.writing_text h3 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    padding-bottom: 8px;
+}
+
+.writing_text p {
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+#footer_fixed {
+    background: #111;
+}
+
+.footer_bar_pri {
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer_bar_pri span a {
+    color: crimson;
+    font-weight: 600;
+}
+
+#photo_bar {
+    padding: 15px 0;
+}
+
+#photo_bar {
+    background: crimson;
+    position: fixed;
+    width: 100%;
+}
+
+.privacy_bar a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+/* ============================= privacy and terms html end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
+
+/* ============================= menu part start ================================ */
+/* ============================= menu part end ================================ */
